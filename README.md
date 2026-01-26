@@ -86,9 +86,42 @@ No buscamos un backend real. Buscamos **calidad de frontend**. Evaluaremos:
    > Esto es vital: Queremos probarlo directamente en nuestros teléfonos.
 3. **AI Log:** Tu archivo `AI_LOG.md`.
 
-### ¿Cómo entregar?
+---
 
-Por favor, responde al correo de reclutamiento con los enlaces a tu **Repo** y a tu **Demo**.
+## 6. Instrucciones de Entrega
+
+Para garantizar la privacidad de tu código y evitar que otros candidatos vean tu solución, sigue este flujo estrictamente:
+
+### Paso 1: Fork y Configuración
+
+1. Haz un **Fork** de este repositorio a tu cuenta personal de GitHub.
+2. Clona tu nuevo repositorio localmente:
+   ```bash
+   git clone https://github.com/TU_USUARIO/frontend-technical-test.git
+   cd frontend-technical-test
+   npm install
+   npm run dev
+   ```
+
+### Paso 2: Desarrollo
+
+- Crea una rama (ej: `feature/onboarding-wizard`) o trabaja en `main` de **tu** repositorio.
+- Haz commits pequeños y descriptivos.
+
+### Paso 3: Envío (¡Importante!)
+
+⚠️ **NO abras un Pull Request (PR) a este repositorio original.**
+
+1. Asegúrate de que tu repositorio en GitHub tenga todos tus cambios.
+2. Despliega tu proyecto en **Vercel** o **Netlify** (es gratuito y se conecta directo a tu GitHub).
+3. Envía un correo a `contacto@laneta.com` (o responde al hilo de reclutamiento) con:
+   - 🔗 **URL del Repositorio:** (Tu fork con la solución).
+   - 📱 **URL del Demo:** (El link de Vercel/Netlify para probarlo en móvil).
+   - 🤖 **AI Log:** Confirma si incluiste el archivo `AI_LOG.md`.
+
+---
+
+> **Nota:** Buscamos evaluar tu código, no el de los demás. Por eso pedimos el link directo en lugar de un Pull Request público.
 
 ---
 
