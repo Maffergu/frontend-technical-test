@@ -18,10 +18,10 @@ export default function Button({
   return (
     <button
       className={cn(
-        'inline-flex items-center justify-center font-medium rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed',
+        'inline-flex items-center justify-center font-medium font-jetbrains rounded-3xl transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed',
         {
-          'bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500': variant === 'primary',
-          'bg-gray-200 text-gray-900 hover:bg-gray-300 focus:ring-gray-500': variant === 'secondary',
+          'bg-[#FF1493] text-white hover:bg-[#C71073] focus:ring-primary-500': variant === 'primary',
+          'bg-[#1c0d40] text-white hover:bg-[#150a30] focus:ring-gray-500': variant === 'secondary',
           'border-2 border-gray-300 bg-transparent hover:bg-gray-100 focus:ring-gray-500': variant === 'outline',
         },
         {

@@ -7,9 +7,13 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        
         sans: ['Inter', 'system-ui', 'sans-serif'],
+        jakarta: ['Plus Jakarta Sans', 'sans-serif'],
+        jetbrains: ['JetBrains Mono', 'monospace'],
       },
       colors: {
+        purple: "#7C3AED",
         primary: {
           50: '#f0f9ff',
           100: '#e0f2fe',

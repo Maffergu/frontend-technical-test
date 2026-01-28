@@ -31,7 +31,9 @@
 
 import { useNavigate } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
-import { Button, Card } from '@/components/ui'
+import { Button, Card, LogoIcon } from '@/components/ui'
+import PeopleIcon from '@/assets/People.svg';
+
 
 export default function Welcome() {
   const navigate = useNavigate()
@@ -39,27 +41,32 @@ export default function Welcome() {
   return (
     <div className="flex flex-col items-center justify-center min-h-[80vh]">
       <Card className="w-full text-center">
-        {/* TODO: Replace with actual logo from /src/assets/ */}
-        <div className="mb-6">
-          <div className="w-16 h-16 bg-primary-100 rounded-full mx-auto flex items-center justify-center">
-            <span className="text-2xl font-bold text-primary-600">L</span>
-          </div>
+        <div className="flex justify-center mb-8 text-white">
+          <LogoIcon />
         </div>
-
-        <h1 className="text-2xl font-bold text-gray-900 mb-2">
-          Welcome
+        <div className="flex justify-center mb-8">
+          <img 
+            src={PeopleIcon} 
+            alt="People" 
+            className="w-auto h-60" 
+          />
+        </div>
+        
+        <h1 className="text-5xl font-extrabold font-jakarta text-white mb-2">
+          What is Elevn?
         </h1>
 
-        <p className="text-gray-600 mb-8">
-          Let's set up your profile in just a few steps.
+        <p className="ext-2xl text-white mb-8">
+        Elevn connects creators with real opportunities to grow, collaborate, and earn.
         </p>
 
         <Button
+          
           onClick={() => navigate('/onboarding/bio')}
           className="w-full"
           size="lg"
         >
-          Get Started
+          Continue
           <ArrowRight className="ml-2 h-5 w-5" />
         </Button>
       </Card>
