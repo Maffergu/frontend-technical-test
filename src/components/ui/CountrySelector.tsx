@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-
 // 1. Definimos la estructura del objeto País
 export interface Country {
   name: string;

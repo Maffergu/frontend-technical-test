@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { ArrowRight, ArrowLeft } from 'lucide-react'
+import { ArrowRight} from 'lucide-react'
 import { Button, Card, Input } from '@/components/ui'
 import CountrySelector, { Country } from '@/components/ui/CountrySelector';
 
