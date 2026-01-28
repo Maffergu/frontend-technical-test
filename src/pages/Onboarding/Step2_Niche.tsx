@@ -35,18 +35,26 @@ export default function Step2Niche() {
     <div className="space-y-6">
       {/* Progress indicator */}
       <div className="flex items-center justify-center gap-2">
-        <div className="w-8 h-1 bg-primary-600 rounded" />
-        <div className="w-8 h-1 bg-primary-600 rounded" />
+        
+        <div className="w-8 h-1 bg-[#411d8f] rounded" />
+        <div className="w-8 h-1 bg-purple rounded" />
         <div className="w-8 h-1 bg-gray-200 rounded" />
       </div>
 
-      <Card>
-        <h1 className="text-xl font-bold text-gray-900 mb-2">
+      <Card className="bg-[#1c0d40]/80 backdrop-blur-md border-none p-8 shadow-2xl">
+        <p className="text-gray-400 font-mono mb-6 text-sm uppercase tracking-widest">
+          Step 2 of 3
+        </p>
+        <h1 className="text-4xl font-jakarta font-extrabold text-white mb-2">
           Select your niche
         </h1>
-        <p className="text-gray-600 mb-6 text-sm">
-          Step 2 of 3 - Choose one or more
-        </p>
+
+        <h3 className="text-lg text-gray-300 mb-8 font-inter"> 
+          Choose the categories that best describe
+          your content. This helps us match you with
+          the right brands.
+        </h3>
+        
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="grid grid-cols-2 gap-3">
@@ -56,15 +64,15 @@ export default function Step2Niche() {
                 type="button"
                 onClick={() => toggleNiche(niche.id)}
                 className={cn(
-                  'relative p-4 rounded-lg border-2 text-left transition-all',
+                  'relative p-4 rounded-lg bg-[#1c0d40] text-left transition-all text-white',
                   selected.includes(niche.id)
-                    ? 'border-primary-600 bg-primary-50'
+                    ? 'border-primary-600 bg-[#FF1493]'
                     : 'border-gray-200 hover:border-gray-300'
                 )}
               >
                 {selected.includes(niche.id) && (
                   <div className="absolute top-2 right-2">
-                    <Check className="h-4 w-4 text-primary-600" />
+                    <Check className="h-4 w-4 text-gray-300" />
                   </div>
                 )}
                 <span className="text-sm font-medium">{niche.label}</span>
@@ -75,11 +83,11 @@ export default function Step2Niche() {
           <div className="flex gap-3 pt-4">
             <Button
               type="button"
-              variant="outline"
+              variant="secondary"
               onClick={() => navigate('/onboarding/bio')}
               className="flex-1"
             >
-              <ArrowLeft className="mr-2 h-4 w-4" />
+              <ArrowLeft className="mr-2 h-4 w-4 " />
               Back
             </Button>
             <Button type="submit" className="flex-1">
