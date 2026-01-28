@@ -33,15 +33,19 @@ export default function Step2Niche() {
 
   return (
     <div className="space-y-6">
+       <div className="text-xl font-jakarta text-white mb-2 text-center">
+         Sign Up
+      </div>
+      
+
+      <Card className="bg-[#1c0d40]/80 backdrop-blur-md border-none p-8 shadow-2xl">
       {/* Progress indicator */}
-      <div className="flex items-center justify-center gap-2">
+      <div className="flex items-center justify-center gap-2 mb-3">
         
         <div className="w-8 h-1 bg-[#411d8f] rounded" />
         <div className="w-8 h-1 bg-purple rounded" />
         <div className="w-8 h-1 bg-gray-200 rounded" />
       </div>
-
-      <Card className="bg-[#1c0d40]/80 backdrop-blur-md border-none p-8 shadow-2xl">
         <p className="text-gray-400 font-mono mb-6 text-sm uppercase tracking-widest">
           Step 2 of 3
         </p>
@@ -64,7 +68,7 @@ export default function Step2Niche() {
                 type="button"
                 onClick={() => toggleNiche(niche.id)}
                 className={cn(
-                  'relative p-4 rounded-lg bg-[#1c0d40] text-left transition-all text-white',
+                  'relative p-4 -lg bg-[#1c0d40] text-left transition-all text-white',
                   selected.includes(niche.id)
                     ? 'border-primary-600 bg-[#FF1493]'
                     : 'border-gray-200 hover:border-gray-300'
@@ -78,6 +82,11 @@ export default function Step2Niche() {
                 <span className="text-sm font-medium">{niche.label}</span>
               </button>
             ))}
+          </div>
+          <div className="bg-[#533599]/20 px-4 py-1.5 rounded-full border border-[#533599]/30">
+            <span className="font-jakarta font-bold text-white">
+              {selected.length} {selected.length === 1 ? 'niche' : 'niches'} selected
+            </span>
           </div>
 
           <div className="flex gap-3 pt-4">

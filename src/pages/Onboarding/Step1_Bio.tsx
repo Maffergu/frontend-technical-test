@@ -39,14 +39,18 @@ export default function Step1Bio() {
 
   return (
     <div className="space-y-6">
+       <div className="text-xl font-jakarta text-white mb-2 text-center">
+         Sign Up
+      </div>
+      
+
+      <Card className="bg-[#1c0d40]/80 backdrop-blur-md border-none p-8 shadow-2xl">
       {/* Indicador de progreso */}
-      <div className="flex items-center justify-center gap-2">
+      <div className="flex items-center justify-center gap-2 mb-3">
         <div className="w-8 h-1 bg-purple rounded" />
         <div className="w-8 h-1 bg-gray-600 rounded" />
         <div className="w-8 h-1 bg-gray-600 rounded" />
       </div>
-
-      <Card className="bg-[#1c0d40]/80 backdrop-blur-md border-none p-8 shadow-2xl">
         <p className="text-gray-400 font-mono mb-6 text-sm uppercase tracking-widest">
           Step 1 of 3
         </p>
