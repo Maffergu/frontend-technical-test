@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { ArrowRight, ArrowLeft, Instagram, Twitter, Youtube, ChevronDown } from 'lucide-react'
+import { ArrowRight, ArrowLeft, Instagram, ChevronDown } from 'lucide-react'
 import { Button, Card, Input } from '@/components/ui'
 import { IoShield } from "react-icons/io5";
 
